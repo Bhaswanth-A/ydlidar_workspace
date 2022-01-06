@@ -33,10 +33,10 @@
     <!-- frequency is invalid, External PWM control speed -->
     <param name="frequency"    type="double" value="10.0"/>
   </node>
-  <!-- <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser4"
-    args="0.0 0.0 0.2 0.0 0.0 0.0 /base_footprint /laser_frame 40" /> -->
+  <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser4"
+    args="0.0 0.0 0.2 0.0 0.0 0.0 /base_footprint /laser_frame 40" />
 
-    <node pkg ="tf" type="static_transform_publisher" name="map_to_odom" args="0.0 0.0 0.0 0.0 0.0 0.0 /map /nav 40"/>
+    <!-- <node pkg ="tf" type="static_transform_publisher" name="map_to_odom" args="0.0 0.0 0.0 0.0 0.0 0.0 /map /nav 40"/>
 
     <node pkg ="tf" type="static_transform_publisher" name="odom_to_base_link" args="0.0 0.0 0.0 0.0 0.0 0.0 /nav /base_footprint 40"/>
 
@@ -44,5 +44,5 @@
 
     <include file="$(find hector_mapping)/launch/mapping_default.launch" />
 
-    <include file="$(find hector_geotiff_launch)/launch/geotiff_mapper.launch" />
+    <include file="$(find hector_geotiff_launch)/launch/geotiff_mapper.launch" /> -->
 </launch>
